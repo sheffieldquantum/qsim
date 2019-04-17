@@ -40,6 +40,7 @@ def plot(folder_path):
     plt.xticks(fontsize=16)
     plt.yticks(fontsize=16)
 
+    plt.tight_layout()
 
     plt.show()
 

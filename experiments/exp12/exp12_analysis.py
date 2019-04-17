@@ -21,6 +21,9 @@ def produce_graphs(file_path):
     df = df.drop(['p_%d'%i for i in range(1,6)], axis=1)
     plt.plot(df['n'], df['%'], marker='o', linewidth=2.5, label='Suzuki')
     plt.ylim([0, 100])
+
+    plt.tight_layout()
+
     plt.show()
 
 

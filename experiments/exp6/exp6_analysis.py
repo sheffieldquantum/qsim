@@ -32,7 +32,7 @@ def produce_graphs(file_path):
     plt.xticks( fontsize=18)
     plt.yticks(fontsize=16)
 
-
+    plt.tight_layout()
 
     plt.show()
 

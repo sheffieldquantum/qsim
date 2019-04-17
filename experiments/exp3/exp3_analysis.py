@@ -28,6 +28,9 @@ def produce_graphs(path):
         ax.set_ylabel('Absolute Error',  fontsize=16)
 
    #plt.savefig(os.path.join(path, 'plot.jpeg'), dpi=300)
+
+    plt.tight_layout()
+
     plt.show()
 
 
@@ -62,6 +65,8 @@ def produce_boxplots(path):
     plt.xticks(fontsize=16)
     plt.ylabel('% Error Reduction', fontsize=16)
     plt.xlabel('')
+
+    plt.tight_layout()
 
     plt.show()
 

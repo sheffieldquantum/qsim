@@ -28,5 +28,7 @@ ax.legend(['t=10', 't=2n'], fontsize=16)
 
 plt.ylim([0,100])
 
+plt.tight_layout()
+
 plt.show()
 #plt.savefig(GRAPH_FILE)

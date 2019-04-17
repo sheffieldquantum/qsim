@@ -24,6 +24,8 @@ def produce_graphs(file_path):
     ax.set_xlabel('')
     ax.set_ylabel('% Error Reduction',  fontsize=18)
 
+    plt.tight_layout()
+
     plt.show()
 
 

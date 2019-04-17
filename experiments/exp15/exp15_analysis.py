@@ -46,6 +46,9 @@ def plot(folder_path):
     plt.ylim([0, 100])
     plt.ylabel('% Error Reduction',  fontsize=18)
     plt.yticks(fontsize=16)
+
+    plt.tight_layout()
+
     plt.show()
 
 

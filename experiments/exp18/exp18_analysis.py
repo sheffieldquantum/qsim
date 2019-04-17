@@ -38,7 +38,7 @@ def produce_graphs(file_path):
 
     plt.legend(fontsize=14)
 
-
+    plt.tight_layout()
 
     plt.show()
 

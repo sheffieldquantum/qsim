@@ -33,21 +33,21 @@ def produce_graphs(file_path):
 
         if r in [25,100,200,300,400]:
             plt.annotate('r=%d'%r, (approx.gate_count(chain, r * 5 ** (k - 1)), row['suzuki error']),
-                         textcoords='offset pixels', xytext=(-10,10), fontsize=13)
+                         textcoords='offset pixels', xytext=(-10,10), fontsize=17)
 
     plt.plot(gate_counts,df['suzuki error'], marker='o', linewidth=2.5,  label='Suzuki')
     plt.plot(gate_counts, df['optimised error'], marker='o',linewidth=2.5, label='Optimised')
     plt.hlines([10 ** (-i) for i in range(1, 6)], xmin=3 * 10 ** 3, xmax=5 * 10 ** 4, colors='#feb0b2')
-    plt.xticks(fontsize=18)
-    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
     ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter(useMathText=True))
     ax.set_xticks([5e3,1e4,2e4,5e4])
     ax.set_xticklabels(['5×10$^{3}$','1×10$^{4}$','2×10$^{4}$','5×10$^{4}$'])
 
 
-    plt.legend(fontsize=20)
-    plt.xlabel('Total Gate Count', fontsize=18,labelpad=10)
-    plt.ylabel('Absolute Error', fontsize=18)
+    plt.legend(fontsize=24)
+    plt.xlabel('Total Gate Count', fontsize=24,labelpad=10)
+    plt.ylabel('Absolute Error', fontsize=24)
 
     #plt.savefig(os.path.join(file_path, 'plots_r.png'), dpi=fig.dpi)
     plt.show()
