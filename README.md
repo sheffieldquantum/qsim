@@ -1,5 +1,11 @@
 # Quantum-Simulation-Optimisation
-Approximating a Heisenberg Chain with Trotter-Suzuki decompositions.
+This repo accompanies the GECCO 2019 paper "Optimising Trotter-Suzuki Decompositions for Quantum Simulation Using Evolutionary Strategies" by Benjamin D.M. Jones, David R. White, George O. O'Brien, John A. Clark, Earl T. Campbell.
+
+The code was written by Ben and David.
+
+[Preprint of this paper via arxiv.](https://arxiv.org/abs/1904.01336)
+
+The code optimises the approximation of a Heisenberg Chain using Trotter-Suzuki decomposition.
 
 The core source code is in the _qsim_ directory, with tests in _test_.
 
